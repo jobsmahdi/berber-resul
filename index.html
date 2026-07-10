@@ -821,7 +821,7 @@
       <a href="#handwerk">Handwerk</a>
       <a href="#bewertungen">Bewertungen</a>
       <a href="#kontakt">Kontakt</a>
-      <a href="tel:+4920339206613" class="btn nav-cta">Jetzt anrufen</a>
+      <a href="tel:+4920339206613" class="btn nav-cta" id="navPhoneLink">Jetzt anrufen</a>
     </nav>
     <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="primaryNav">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -837,36 +837,36 @@
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Fischerstraße 79 · Seit 2017</span>
-        <h1>Präzision ist<br>keine <span class="accent">Zufall.</span></h1>
-        <p class="lede">Fades, Konturen und die klassische Rasur mit dem Messer — in Wanheimerort seit fast einem Jahrzehnt Handwerk statt Hektik. Ohne Termin. Ohne Kompromisse.</p>
+        <span class="eyebrow" data-field="hero.eyebrow">Fischerstraße 79 · Seit 2017</span>
+        <h1><span data-field="hero.headline_pre">Präzision ist keine</span><br><span class="accent" data-field="hero.headline_accent">Zufall.</span></h1>
+        <p class="lede" data-field="hero.lede">Fades, Konturen und die klassische Rasur mit dem Messer — in Wanheimerort seit fast einem Jahrzehnt Handwerk statt Hektik. Ohne Termin. Ohne Kompromisse.</p>
         <div class="hero-ctas">
-          <a href="tel:+4920339206613" class="btn">
+          <a href="tel:+4920339206613" class="btn" id="heroPhoneLink">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            +49 203 39206613
+            <span data-field="hero.phone_display">+49 203 39206613</span>
           </a>
           <a href="#leistungen" class="btn ghost">Leistungen ansehen</a>
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <b>4,8 / 5</b>
-            <span>Kundenbewertung</span>
+            <b data-field="hero.stat_1_value">4,8 / 5</b>
+            <span data-field="hero.stat_1_label">Kundenbewertung</span>
           </div>
           <div class="stat">
-            <b>2017</b>
-            <span>Gegründet</span>
+            <b data-field="hero.stat_2_value">2017</b>
+            <span data-field="hero.stat_2_label">Gegründet</span>
           </div>
           <div class="stat">
-            <b>Mo–Sa</b>
-            <span>Ohne Termin möglich</span>
+            <b data-field="hero.stat_3_value">Mo–Sa</b>
+            <span data-field="hero.stat_3_label">Ohne Termin möglich</span>
           </div>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Präziser Fade-Haarschnitt, ausgeführt bei Berber Resul in Duisburg">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop" alt="Präziser Fade-Haarschnitt, ausgeführt bei Berber Resul in Duisburg" id="heroImage">
         <div class="hero-visual-badge">
           <span class="stars">★★★★★</span>
-          <span class="rating-text">4,8/5 · Google & WerKenntdenBesten</span>
+          <span class="rating-text" data-field="hero.rating_badge">4,8/5 · Google & WerKenntdenBesten</span>
         </div>
       </div>
     </div>
@@ -882,10 +882,10 @@
           <span class="section-kicker">Das Angebot</span>
           <h2>Leistungen & Preise</h2>
         </div>
-        <p>Jeder Schnitt wird auf Haarstruktur und Kopfform abgestimmt — vom sauberen Fade bis zur klassischen Schere. Barzahlung vor Ort.</p>
+        <p data-field="services.intro">Jeder Schnitt wird auf Haarstruktur und Kopfform abgestimmt — vom sauberen Fade bis zur klassischen Schere. Barzahlung vor Ort.</p>
       </div>
 
-      <div class="service-board">
+      <div class="service-board" id="serviceBoard">
         <div class="service-row">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3v18M6 3c3 0 5 2 5 5s-2 5-5 5M6 13c3 0 5 2 5 5s-2 3-5 3M14 8l7 8M14 16l7-8"/></svg>
@@ -937,14 +937,14 @@
   <section id="handwerk">
     <div class="wrap craft">
       <div class="craft-img">
-        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop" alt="Bartpflege und Rasur mit dem Messer bei Berber Resul">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop" alt="Bartpflege und Rasur mit dem Messer bei Berber Resul" id="craftImage">
       </div>
       <div class="craft-text">
-        <span class="section-kicker">Seit 2017 in Wanheimerort</span>
-        <h2>Handwerk, das man sieht — und spürt.</h2>
-        <p>Berber Resul ist seit fast einem Jahrzehnt fester Bestandteil der Nachbarschaft in Duisburg-Wanheimerort. Was als kleiner Laden an der Fischerstraße begann, ist heute eine feste Adresse für scharfe Fades und gepflegte Bärte — getragen von technischer Präzision und einer entspannten, gastfreundlichen Atmosphäre.</p>
-        <p>Kinder sind willkommen, Laufkundschaft ebenso wie feste Stammgäste. Wer's eilig hat, sollte außerhalb der Stoßzeiten kommen — der gute Ruf bringt auch mal eine Wartezeit mit sich.</p>
-        <ul class="craft-list">
+        <span class="section-kicker" data-field="craft.kicker">Seit 2017 in Wanheimerort</span>
+        <h2 data-field="craft.heading">Handwerk, das man sieht — und spürt.</h2>
+        <p data-field="craft.paragraph_1">Berber Resul ist seit fast einem Jahrzehnt fester Bestandteil der Nachbarschaft in Duisburg-Wanheimerort. Was als kleiner Laden an der Fischerstraße begann, ist heute eine feste Adresse für scharfe Fades und gepflegte Bärte — getragen von technischer Präzision und einer entspannten, gastfreundlichen Atmosphäre.</p>
+        <p data-field="craft.paragraph_2">Kinder sind willkommen, Laufkundschaft ebenso wie feste Stammgäste. Wer's eilig hat, sollte außerhalb der Stoßzeiten kommen — der gute Ruf bringt auch mal eine Wartezeit mit sich.</p>
+        <ul class="craft-list" id="craftList">
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
             Hohe technische Präzision, von Kunden immer wieder hervorgehoben
@@ -979,7 +979,7 @@
         <p>Ausgewertet von regionalen Plattformen wie WerKenntdenBesten — durchweg hohe Zufriedenheit mit Technik und Atmosphäre.</p>
       </div>
 
-      <div class="review-grid">
+      <div class="review-grid" id="reviewGrid">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-quote">Exakte Ausführung bei jedem Besuch — der Fade sitzt einfach.</p>
@@ -998,10 +998,10 @@
       </div>
 
       <div class="rating-summary">
-        <div class="big">4,8</div>
+        <div class="big" data-field="reviews.rating_value">4,8</div>
         <div>
-          <div class="stars-lg">★★★★★</div>
-          <div class="fine">Durchschnitt aus Google- & WerKenntdenBesten-Bewertungen</div>
+          <div class="stars-lg" data-field="reviews.rating_stars">★★★★★</div>
+          <div class="fine" data-field="reviews.rating_note">Durchschnitt aus Google- & WerKenntdenBesten-Bewertungen</div>
         </div>
         <a href="https://www.werkenntdenbesten.de/e/113394564/friseur/duisburg/berber-resul-bewertungen.html?utm_source=referral_11880&utm_medium=widget&utm_campaign=wkdb_widget" target="_blank" rel="noopener">Alle Bewertungen lesen →</a>
       </div>
@@ -1056,22 +1056,22 @@
           </h3>
           <div class="info-row">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Fischerstraße 79<br>47055 Duisburg (Wanheimerort)</span>
+            <span><span data-field="contact.address_line1">Fischerstraße 79</span><br><span data-field="contact.address_line2">47055 Duisburg (Wanheimerort)</span></span>
           </div>
           <div class="info-row">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <a href="tel:+4920339206613">+49 203 39206613</a>
+            <a href="tel:+4920339206613" id="contactPhoneLink"><span data-field="contact.phone_display">+49 203 39206613</span></a>
           </div>
           <div class="info-row">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            <a href="https://www.instagram.com/berberresul_/" target="_blank" rel="noopener">@berberresul_ auf Instagram</a>
+            <a href="https://www.instagram.com/berberresul_/" target="_blank" rel="noopener" id="contactInstaLink"><span data-field="contact.instagram_handle">@berberresul_</span> auf Instagram</a>
           </div>
           <div class="info-row">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="6" width="15" height="12" rx="1"/><path d="M16 10h3l3 3v5h-6z"/><circle cx="6" cy="18.5" r="1.8"/><circle cx="18" cy="18.5" r="1.8"/></svg>
-            <span>Kostenlose Parkplätze & Straßenparken in der Nähe</span>
+            <span data-field="contact.parking_note">Kostenlose Parkplätze & Straßenparken in der Nähe</span>
           </div>
 
-          <div class="policy-tags">
+          <div class="policy-tags" id="policyTags">
             <span class="policy-tag">Ohne Termin</span>
             <span class="policy-tag">Termine möglich</span>
             <span class="policy-tag">Kinderfreundlich</span>
@@ -1114,10 +1114,10 @@
   <!-- ================= CTA BAND ================= -->
   <section class="cta-band">
     <div class="wrap">
-      <h2>Vorbeikommen lohnt sich.</h2>
-      <p>Kein Termin nötig — wir sind Mo–Fr von 9 bis 18:30 Uhr und Sa von 9 bis 16:30 Uhr für dich da.</p>
+      <h2 data-field="cta_band.heading">Vorbeikommen lohnt sich.</h2>
+      <p data-field="cta_band.text">Kein Termin nötig — wir sind Mo–Fr von 9 bis 18:30 Uhr und Sa von 9 bis 16:30 Uhr für dich da.</p>
       <div class="cta-row">
-        <a href="tel:+4920339206613" class="btn">Jetzt anrufen</a>
+        <a href="tel:+4920339206613" class="btn" id="ctaPhoneLink">Jetzt anrufen</a>
         <a href="https://www.google.com/maps?q=Fischerstra%C3%9Fe+79,+47055+Duisburg" target="_blank" rel="noopener" class="btn ghost">Route planen</a>
       </div>
     </div>
@@ -1133,7 +1133,7 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <span>Berber Resul<small>Herrenfriseur · Duisburg</small></span>
         </a>
-        <p>Traditionelles Handwerk und moderne Fades in Duisburg-Wanheimerort. Seit 2017 an der Fischerstraße.</p>
+        <p data-field="footer.blurb">Traditionelles Handwerk und moderne Fades in Duisburg-Wanheimerort. Seit 2017 an der Fischerstraße.</p>
       </div>
       <div>
         <h4>Navigation</h4>
@@ -1147,9 +1147,9 @@
       <div>
         <h4>Kontakt</h4>
         <ul>
-          <li><a href="tel:+4920339206613">+49 203 39206613</a></li>
+          <li><a href="tel:+4920339206613" id="footerPhoneLink"><span data-field="contact.phone_display">+49 203 39206613</span></a></li>
           <li><a href="https://www.instagram.com/berberresul_/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><span>Fischerstraße 79, 47055 Duisburg</span></li>
+          <li><span data-field="contact.address_line1">Fischerstraße 79</span>, <span data-field="contact.address_line2">47055 Duisburg (Wanheimerort)</span></li>
         </ul>
       </div>
     </div>
@@ -1159,7 +1159,7 @@
         <a href="https://www.instagram.com/berberresul_/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
-        <a href="tel:+4920339206613" aria-label="Anrufen">
+        <a href="tel:+4920339206613" aria-label="Anrufen" id="footerSocialPhoneLink">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </a>
       </div>
@@ -1185,10 +1185,129 @@
     });
   });
 
-  // Highlight today's row in the hours table
-  const todayIndex = new Date().getDay(); // 0 = Sunday ... 6 = Saturday
-  const row = document.querySelector('#hoursTable tr[data-day="' + todayIndex + '"]');
-  if (row) row.classList.add('today');
+  // Highlight today's row in the hours table (falls back to the static
+  // markup above until content loads, then re-runs after rendering)
+  function highlightToday(){
+    document.querySelectorAll('#hoursTable tr').forEach(r => r.classList.remove('today'));
+    const todayIndex = new Date().getDay(); // 0 = Sunday ... 6 = Saturday
+    const row = document.querySelector('#hoursTable tr[data-day="' + todayIndex + '"]');
+    if (row) row.classList.add('today');
+  }
+  highlightToday();
+
+  // ---------- CMS content loading ----------
+  // Fills the page from content/site.json, which Sveltia CMS edits.
+  // If the fetch fails (e.g. opened as a local file:// without a server),
+  // the static text already in the HTML is left as-is.
+  const SERVICE_ICONS = [
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3v18M6 3c3 0 5 2 5 5s-2 5-5 5M6 13c3 0 5 2 5 5s-2 3-5 3M14 8l7 8M14 16l7-8"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h10M4 18h13"/><circle cx="19" cy="12" r="2"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c-1 4-1 6-4 8 3 1 4 3 4 8 0-5 1-7 4-8-3-2-3-4-4-8Z"/><path d="M5 19l-2 2M19 19l2 2"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>'
+  ];
+  const CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>';
+
+  function getPath(obj, path){
+    return path.split('.').reduce((o, k) => (o == null ? undefined : o[k]), obj);
+  }
+
+  function renderScalarFields(data){
+    document.querySelectorAll('[data-field]').forEach(el => {
+      const value = getPath(data, el.getAttribute('data-field'));
+      if (value !== undefined) el.textContent = value;
+    });
+  }
+
+  function renderServices(data){
+    const board = document.getElementById('serviceBoard');
+    const items = data.services && data.services.items;
+    if (!board || !items) return;
+    board.innerHTML = items.map((item, i) => `
+      <div class="service-row">
+        <div class="service-icon">${SERVICE_ICONS[i % SERVICE_ICONS.length]}</div>
+        <div>
+          <div class="service-name">${item.name}</div>
+          <div class="service-desc">${item.desc}</div>
+        </div>
+        <div class="price">${item.price}</div>
+      </div>`).join('');
+  }
+
+  function renderReviews(data){
+    const grid = document.getElementById('reviewGrid');
+    const items = data.reviews && data.reviews.items;
+    if (!grid || !items) return;
+    grid.innerHTML = items.map(item => `
+      <div class="review-card">
+        <div class="review-stars">${item.stars}</div>
+        <p class="review-quote">${item.quote}</p>
+        <div class="review-source">${item.source}</div>
+      </div>`).join('');
+  }
+
+  function renderHours(data){
+    const table = document.getElementById('hoursTable');
+    const rows = data.hours && data.hours.rows;
+    if (!table || !rows) return;
+    const tbody = table.querySelector('tbody');
+    tbody.innerHTML = rows.map((r, i) => {
+      const closed = /geschlossen/i.test(r.time);
+      return `<tr data-day="${i === 6 ? 0 : i + 1}"${closed ? ' class="closed"' : ''}><td>${r.day}</td><td>${r.time}</td></tr>`;
+    }).join('');
+  }
+
+  function renderCraftList(data){
+    const list = document.getElementById('craftList');
+    const items = data.craft && data.craft.highlights;
+    if (!list || !items) return;
+    list.innerHTML = items.map(text => `<li>${CHECK_ICON}${text}</li>`).join('');
+  }
+
+  function renderPolicyTags(data){
+    const wrap = document.getElementById('policyTags');
+    const tags = data.contact && data.contact.policy_tags;
+    if (!wrap || !tags) return;
+    wrap.innerHTML = tags.map(t => `<span class="policy-tag">${t}</span>`).join('');
+  }
+
+  function renderImagesAndLinks(data){
+    const heroImg = document.getElementById('heroImage');
+    if (heroImg && data.hero && data.hero.image) heroImg.src = data.hero.image;
+
+    const craftImg = document.getElementById('craftImage');
+    if (craftImg && data.craft && data.craft.image) craftImg.src = data.craft.image;
+
+    const phone = data.contact && data.contact.phone;
+    if (phone) {
+      ['heroPhoneLink', 'contactPhoneLink', 'ctaPhoneLink', 'navPhoneLink', 'footerPhoneLink', 'footerSocialPhoneLink']
+        .forEach(id => {
+          const el = document.getElementById(id);
+          if (el) el.setAttribute('href', 'tel:' + phone);
+        });
+    }
+
+    const igUrl = data.contact && data.contact.instagram_url;
+    if (igUrl) {
+      ['contactInstaLink'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.setAttribute('href', igUrl);
+      });
+    }
+  }
+
+  fetch('content/site.json', { cache: 'no-store' })
+    .then(res => res.ok ? res.json() : Promise.reject(res.status))
+    .then(data => {
+      renderScalarFields(data);
+      renderServices(data);
+      renderReviews(data);
+      renderHours(data);
+      renderCraftList(data);
+      renderPolicyTags(data);
+      renderImagesAndLinks(data);
+      highlightToday();
+    })
+    .catch(err => console.warn('Content konnte nicht geladen werden, zeige Standardtext:', err));
 </script>
 
 </body>
