@@ -1,0 +1,120 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: OWNER/REPO   # TODO: replace with your GitHub username/repo, e.g. berberresul/website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: site
+    label: "Website-Inhalt"
+    files:
+      - name: site
+        label: "Seiteninhalt"
+        file: "content/site.json"
+        fields:
+          - label: "Hero (Kopfbereich)"
+            name: hero
+            widget: object
+            fields:
+              - { label: "Eyebrow-Text", name: eyebrow, widget: string }
+              - { label: "Überschrift (Teil 1)", name: headline_pre, widget: string }
+              - { label: "Überschrift (Akzent)", name: headline_accent, widget: string }
+              - { label: "Beschreibung", name: lede, widget: text }
+              - { label: "Telefonnummer (Anzeige)", name: phone_display, widget: string }
+              - { label: "Hero-Bild", name: image, widget: image }
+              - { label: "Bewertungs-Badge", name: rating_badge, widget: string }
+              - { label: "Statistik 1 – Wert", name: stat_1_value, widget: string }
+              - { label: "Statistik 1 – Beschriftung", name: stat_1_label, widget: string }
+              - { label: "Statistik 2 – Wert", name: stat_2_value, widget: string }
+              - { label: "Statistik 2 – Beschriftung", name: stat_2_label, widget: string }
+              - { label: "Statistik 3 – Wert", name: stat_3_value, widget: string }
+              - { label: "Statistik 3 – Beschriftung", name: stat_3_label, widget: string }
+
+          - label: "Leistungen & Preise"
+            name: services
+            widget: object
+            fields:
+              - { label: "Einleitungstext", name: intro, widget: text }
+              - label: "Leistungen"
+                name: items
+                widget: list
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - { label: "Name", name: name, widget: string }
+                  - { label: "Beschreibung", name: desc, widget: text }
+                  - { label: "Preis", name: price, widget: string }
+
+          - label: "Handwerk / Über uns"
+            name: craft
+            widget: object
+            fields:
+              - { label: "Kicker-Text", name: kicker, widget: string }
+              - { label: "Überschrift", name: heading, widget: string }
+              - { label: "Bild", name: image, widget: image }
+              - { label: "Absatz 1", name: paragraph_1, widget: text }
+              - { label: "Absatz 2", name: paragraph_2, widget: text }
+              - label: "Stichpunkte"
+                name: highlights
+                widget: list
+                field: { label: "Punkt", name: item, widget: string }
+
+          - label: "Bewertungen"
+            name: reviews
+            widget: object
+            fields:
+              - label: "Rezensionen"
+                name: items
+                widget: list
+                summary: "{{fields.source}}"
+                fields:
+                  - { label: "Sterne (z. B. ★★★★★)", name: stars, widget: string }
+                  - { label: "Zitat", name: quote, widget: text }
+                  - { label: "Quelle", name: source, widget: string }
+              - { label: "Gesamtbewertung (Zahl)", name: rating_value, widget: string }
+              - { label: "Sterne Gesamtbewertung", name: rating_stars, widget: string }
+              - { label: "Hinweistext", name: rating_note, widget: string }
+
+          - label: "Kontakt"
+            name: contact
+            widget: object
+            fields:
+              - { label: "Adresse Zeile 1", name: address_line1, widget: string }
+              - { label: "Adresse Zeile 2", name: address_line2, widget: string }
+              - { label: "Telefonnummer (für Anruf-Links, mit Ländervorwahl, ohne Leerzeichen)", name: phone, widget: string }
+              - { label: "Telefonnummer (Anzeige)", name: phone_display, widget: string }
+              - { label: "Instagram-Handle", name: instagram_handle, widget: string }
+              - { label: "Instagram-Link", name: instagram_url, widget: string }
+              - { label: "Hinweis Parken", name: parking_note, widget: string }
+              - label: "Merkmale (Tags)"
+                name: policy_tags
+                widget: list
+                field: { label: "Tag", name: tag, widget: string }
+
+          - label: "Öffnungszeiten"
+            name: hours
+            widget: object
+            fields:
+              - label: "Zeilen (Montag bis Sonntag, in dieser Reihenfolge)"
+                name: rows
+                widget: list
+                summary: "{{fields.day}}: {{fields.time}}"
+                fields:
+                  - { label: "Tag", name: day, widget: string }
+                  - { label: "Uhrzeit (oder 'Geschlossen')", name: time, widget: string }
+
+          - label: "CTA-Banner (unten)"
+            name: cta_band
+            widget: object
+            fields:
+              - { label: "Überschrift", name: heading, widget: string }
+              - { label: "Text", name: text, widget: text }
+
+          - label: "Footer"
+            name: footer
+            widget: object
+            fields:
+              - { label: "Kurztext", name: blurb, widget: text }
