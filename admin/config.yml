@@ -2,7 +2,7 @@
 
 backend:
   name: github
-  repo: OWNER/REPO   # TODO: replace with your GitHub username/repo, e.g. berberresul/website
+ jobsmahdi/berber-resul   # TODO: replace with your GitHub username/repo, e.g. berberresul/website
   branch: main
 
 media_folder: "images/uploads"
