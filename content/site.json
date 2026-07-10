@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "eyebrow": "Fischerstraße 79 · Seit 2017",
+    "headline_pre": "Präzision ist keine",
+    "headline_accent": "Zufall.",
+    "lede": "Fades, Konturen und die klassische Rasur mit dem Messer — in Wanheimerort seit fast einem Jahrzehnt Handwerk statt Hektik. Ohne Termin. Ohne Kompromisse.",
+    "phone_display": "+49 203 39206613",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200&auto=format&fit=crop",
+    "rating_badge": "4,8/5 · Google & WerKenntdenBesten",
+    "stat_1_value": "4,8 / 5",
+    "stat_1_label": "Kundenbewertung",
+    "stat_2_value": "2017",
+    "stat_2_label": "Gegründet",
+    "stat_3_value": "Mo–Sa",
+    "stat_3_label": "Ohne Termin möglich"
+  },
+  "services": {
+    "intro": "Jeder Schnitt wird auf Haarstruktur und Kopfform abgestimmt — vom sauberen Fade bis zur klassischen Schere. Barzahlung vor Ort.",
+    "items": [
+      { "name": "Moderner Fade", "desc": "High, Mid oder Taper Fade — sauber verblendet, ohne harte Übergänge.", "price": "ab 17 €" },
+      { "name": "Scheren-Schnitt", "desc": "Klassisches Handwerk mit der Schere für anspruchsvolle Haarstrukturen.", "price": "ab 22 €" },
+      { "name": "Bartpflege & Konturen", "desc": "Rasur mit dem Messer, präzise Bartlinien und pflegende Behandlung.", "price": "ab 15 €" },
+      { "name": "Gesichtspflege", "desc": "Augenbrauen-Threading und erfrischende Behandlungen für die Haut.", "price": "ab 10 €" }
+    ]
+  },
+  "craft": {
+    "kicker": "Seit 2017 in Wanheimerort",
+    "heading": "Handwerk, das man sieht — und spürt.",
+    "image": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1000&auto=format&fit=crop",
+    "paragraph_1": "Berber Resul ist seit fast einem Jahrzehnt fester Bestandteil der Nachbarschaft in Duisburg-Wanheimerort. Was als kleiner Laden an der Fischerstraße begann, ist heute eine feste Adresse für scharfe Fades und gepflegte Bärte — getragen von technischer Präzision und einer entspannten, gastfreundlichen Atmosphäre.",
+    "paragraph_2": "Kinder sind willkommen, Laufkundschaft ebenso wie feste Stammgäste. Wer's eilig hat, sollte außerhalb der Stoßzeiten kommen — der gute Ruf bringt auch mal eine Wartezeit mit sich.",
+    "highlights": [
+      "Hohe technische Präzision, von Kunden immer wieder hervorgehoben",
+      "Freundliche, entspannte Atmosphäre — auch für Kinder geeignet",
+      "Faire Preise im Verhältnis zur Qualität der Arbeit",
+      "Nur Barzahlung — bitte Bargeld mitbringen"
+    ]
+  },
+  "reviews": {
+    "items": [
+      { "stars": "★★★★★", "quote": "Exakte Ausführung bei jedem Besuch — der Fade sitzt einfach.", "source": "Google-Rezension" },
+      { "stars": "★★★★★", "quote": "Entspannte, herzliche Atmosphäre. Man fühlt sich hier wirklich willkommen.", "source": "WerKenntdenBesten" },
+      { "stars": "★★★★☆", "quote": "Top Preis-Leistung. Zur Rush-Hour lieber etwas Zeit einplanen.", "source": "Google-Rezension" }
+    ],
+    "rating_value": "4,8",
+    "rating_stars": "★★★★★",
+    "rating_note": "Durchschnitt aus Google- & WerKenntdenBesten-Bewertungen"
+  },
+  "contact": {
+    "address_line1": "Fischerstraße 79",
+    "address_line2": "47055 Duisburg (Wanheimerort)",
+    "phone": "+4920339206613",
+    "phone_display": "+49 203 39206613",
+    "instagram_handle": "@berberresul_",
+    "instagram_url": "https://www.instagram.com/berberresul_/",
+    "parking_note": "Kostenlose Parkplätze & Straßenparken in der Nähe",
+    "policy_tags": ["Ohne Termin", "Termine möglich", "Kinderfreundlich", "Nur Barzahlung"]
+  },
+  "hours": {
+    "rows": [
+      { "day": "Montag", "time": "09:00 – 18:30" },
+      { "day": "Dienstag", "time": "09:00 – 18:30" },
+      { "day": "Mittwoch", "time": "09:00 – 18:30" },
+      { "day": "Donnerstag", "time": "09:00 – 18:30" },
+      { "day": "Freitag", "time": "09:00 – 18:30" },
+      { "day": "Samstag", "time": "09:00 – 16:30" },
+      { "day": "Sonntag", "time": "Geschlossen" }
+    ]
+  },
+  "cta_band": {
+    "heading": "Vorbeikommen lohnt sich.",
+    "text": "Kein Termin nötig — wir sind Mo–Fr von 9 bis 18:30 Uhr und Sa von 9 bis 16:30 Uhr für dich da."
+  },
+  "footer": {
+    "blurb": "Traditionelles Handwerk und moderne Fades in Duisburg-Wanheimerort. Seit 2017 an der Fischerstraße."
+  }
+}
